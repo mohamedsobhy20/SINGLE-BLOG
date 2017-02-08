@@ -13,115 +13,134 @@
   </head>
   
   <body>
+   
     <header>
-      <img class="head-img"src="img/header.jpg"/>
+      <img class="head-img" src="img/header.jpg" alt="header-image"/>
       <nav class="nav">
         
           <ul class="ul">
-            <li class="li"><a class="a" href="#">Home</a></li>
-            <li class="li"><a class="a" href="#">About</a></li>
+            <li class="li"><a class="a" href="#">home</a></li>
+            <li class="li"><a class="a" href="#">about</a></li>
           </ul>
           
-          <span class="logo" href="#"> d </span>
+          <a class="logo" href="#"> d </a>
           
           <ul class="ul">
             
-            <li class="li category"><a class="a" href="#">Category
+            <li class="li category"><a class="a" href="#">category
               <i class="fa fa-caret-down" aria-hidden="true"></i>
             </a>
             <ul class="dropdown-content">
-              <li><a href="#">Diary</a></li>
-              <li><a href="#">Personal</a></li>
-              <li><a href="#">Holiday</a></li>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">Family</a></li>
+              <li><a href="#">diary</a></li>
+              <li><a href="#">personal</a></li>
+              <li><a href="#">holiday</a></li>
+              <li><a href="#">work</a></li>
+              <li><a href="#">family</a></li>
             </ul>
           </li>
-          <li class="li"><a class="a" href="#">Contact</a></li>
+          <li class="li"><a class="a" href="#">contact</a></li>
         </ul>
       
     </nav>
     </header><!-- end of header -->
     
     
-    <section class="content clearfix">
-      <div class="dates">
-        <p> 31 Jul</p>
-      </div>
-      <div class="reading">
+    <div class="container content clearfix">
+     
+
+      <div class="post-info">
+         <time class="post-date" datetime="2017-07-31">31 Jul</time>
+     
+    
         
-        <div class="brief">
-          <p>cat : <a href="#" class="tag-link"> Diary</a>
-            <span class="tag-link">,</span>
-            <a  class="tag-link" href="#">Personal</a></p>
+        <div class=" post-details">
+          <p class="categories">
+            cat : <a href="#" class="category-link"> diary</a>
+            <span class="category-link">,</span>
+            <a  class="category-link second-category" href="#">personal</a></p>
           <i class="fa fa-heart" aria-hidden="true"></i>
           <a class="likes" href="#">136 Likes</a>
-          <img src="img/comment.png"/>
-          <a class="comments-num" href="#">21 Comments</a>
+          <img src="img/comment.png" alt="comment"/>
+          <a class="comments-number" href="#">21 Comments</a>
         </div>
-        
-        <div class="review">
+        </div>
+
+        <article class="container post">
           
-          <h1>Lorem Ipsum Dolor Sit Amet</h1>
-          <h3>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</h3>
-          <h3>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti. sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</h3>
+          <h1>lorem Ipsum dolor sit amet</h1>
+          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+          <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti. sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
          
-          <img src="img/bus.jpg"/>
-         
+          <img alt="post-image" src="img/bus.jpg" />
+        
           <div class="tags">
             <span class="tags-span">TAGS</span>
             <a href="#" class="tag-link">holidary</a>
-            <span class="tag-link">,</span> 
+            ,
             <a href="#" class="tag-link"> diary</a>
-            <span class="tag-link">,</span>
+            ,
             <a href="#" class="tag-link"> bestmomments</a>
            </div>
-        </div>
-      </div>
-    </section>
-    <section class="comments-num clearfix">
+            </article>
+  </div>  
+    <div class="container comments-counter clearfix">
       <p>21 Comments</p>
       <a href="#" class="button">Next Stories ></a>
-    </section>
+    </div>
     
-    <section class="form" id="commentform">
-      <h1>Post A Comment</h1>
-      <form>
-        <p>Use Your Real Name</p>
-        <input class="form-style name" type="text" placeholder="Name">
-        <input class="form-style mail" type="email" placeholder="Email">
-        <p>Email Will not published</p>
-        <br>
+   
+      
+      <form  class="container form" id="comment-form">
         
-        <p class="CTA">Write a good comment</p>
-        <textarea  placeholder="Comments" class =" form-style comment-input" form="commentform" placeholder="Comments"></textarea>
+        <h2>post a comment</h2>
+        <label for="author-name">Use Your Real Name</label>
+        <input class="form-style name" type="text" placeholder="Name" id="author-name">
+
+        <input class="form-style mail" type="email" placeholder="Email" id="author-email">
+        <label for="author-email">Email Will not published</label>
+        <br>
+        <label for="author-comment" class="CTA">Write a good comment</label>
+        <textarea  placeholder="Comments" class =" form-style comment-input" form="comment-form" id="author-comment"></textarea>
         <br>
         <input class="post-btn button" type="submit" value="POST">
+
       </form>
-    </section>
+   
 
-    <section class="replies">
-    <div class="profile-pic"></div>
-    <div class="position">
-    <a href="#" class="user-name">John Doe</a>
-    <p class="reply">his is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a </p>
-
-    <a class="another-reply" href="#">Reply</a>
-      </div>
-
-    </section>
-
-     <section class="replies">
-    <div class="profile-pic"></div>
-    <div class="position">
-    <a  href="#" class="user-name">John Doe</a>
-    <p class="reply">his is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a </p>
-
-    <a class="another-reply" href="#">Reply</a>
-      </div>
-
-    </section>
+    <div class="container comments">
     
+    <div class="author-info">
+
+    <div class="profile-pic"></div>
+     <a href="#" class="author-name">John Doe</a>
+     </div>
+   
+
+    
+   
+    <p class="author-comment">his is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a </p>
+
+    <a class="reply" href="#">Reply</a>
+      
+
+    </div>
+ <div class="container comments">
+    
+    <div class="author-info">
+
+    <div class="profile-pic"></div>
+     <a href="#" class="author-name">John Doe</a>
+     </div>
+   
+
+    
+   
+    <p class="author-comment">his is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a </p>
+
+    <a class="reply" href="#">Reply</a>
+      
+
+    </div>
     <footer>
       <button class="button">Show More commetns</button>
       <p class="copy-rights">Copyrights (c) 

@@ -16,15 +16,19 @@ html[xmlns] .clearfix {
 * html .clearfix {
   height: 1%;
 }
-section {
+.container{
   width: 940px;
   margin: 0px auto;
+
 }
 
 /* ------------ Header  ----------*/
 header {
   border-bottom: 1px solid #dfdfdf;
   height: 437px;
+  width: 1349px;
+  margin: 0 auto;
+  
   margin-bottom: 58px;
 }
 img.head-img {
@@ -35,7 +39,7 @@ img.head-img {
 .nav {
   text-align: center;
   display: block;
-  width: 1349px;
+   text-transform: capitalize;
 }
 .nav .ul {
   list-style-type: none;
@@ -93,12 +97,12 @@ img.head-img {
   box-shadow: -2px 0px 35px 6px #d8d8d8;
   top: 150%;
   left: -17%;
+  z-index: 2;
 }
 .dropdown-content li {
   font-family: font37857;
   font-size: 18px;
   text-align: left;
-  padding: 28px 0 19px 0;
   border-bottom: 1px solid #e1e1e1;
   font-weight: normal;
   width: 180px;
@@ -108,6 +112,9 @@ img.head-img {
   color: #bcbcbc;
   text-decoration: none;
   margin-left: 11px;
+  padding: 28px 0 19px 0;
+  display: block;
+
 }
 .dropdown-content li a:hover {
   color: #3eb3a5;
@@ -116,42 +123,45 @@ img.head-img {
 /* ----------------content -----------*/
 .content {
   border-bottom: 1px solid #ebebeb;
+  z-index: -1;
+   height: 1012px;
+
 }
 
 /*****DATES******/
-.content .dates {
-  width: 11.70212765957447%;
-  height: 110px;
-  border: 7px solid #ebebeb;
-  border-radius: 50%;
-  display: inline-block;
-   
-    vertical-align: top;
-}
-.content .dates p {
-  font-family: font37857;
-  font-size: 30px;
-  font-weight: bold;
-  color: #3eb3a5;
-  text-align: center;
-  margin-top: 36px;
+.content .post-info {
+  position: relative;
+    left: -55px; 
+    text-transform: capitalize;
 }
 
-/*******READING******/
-.content .reading {
-      margin-left: -4px;
-      width: 85%;
+.content .post-date {
+ font-family: font37857;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3eb3a5;
+    text-align: center;
+    border: 7px solid #ebebeb;
+    border-radius: 50%;
     display: inline-block;
-    margin-top: 30px;
-}
-/***BRIEF***/
-.content .reading .brief {
-  border-bottom: 1px solid #ebebeb;
-  margin-bottom: 25px;
-  padding-left: 13px;
+    padding: 37px 23px;
+    padding-top: 44px;
+    }
+
+
+
+.content .post-details {
+  vertical-align: top;
+    position: relative;
+    top: 24px;
+    left: -6px;
+        width: 83%;
+    border-bottom: 1px solid #ebebeb;
+    padding-left: 15px;
+    display: inline-block;
 }
 
-.content .reading .brief p {
+.content  .post-details p.categories {
   margin: 0px;
   display: inline-block;
   margin-bottom: 13px;
@@ -161,44 +171,64 @@ img.head-img {
   line-height: 25px;
   border-right: 1px solid #ebebeb;
 }
+.category-link {
+  font-family: font37857;
+  font-size: 16px;
+  color: #3eb3a5;
+  text-decoration: none;
+}
+ 
+ .categories .second-category{
+  padding-right: 10px;
+ }
 
-.content .reading .brief p a:hover {
+.content  .post-details p a:hover {
   text-decoration: underline;
 }
-.content .reading .brief i {
+.content .post-details i {
   padding-left: 10px;
   color: #3eb3a5;
 }
 
-.content .reading .brief a.likes {
-  color: #c0c0c0;
-  padding-right: 1.914893617021277%;
-  font-family: font37857;
-  text-decoration: none;
+.content  .post-details a.likes {
+    color: #c0c0c0;
+    font-family: font37857;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 26px;
+    border-right: 1px solid #ebebeb;
+    padding-right: 14px;
+    margin: 0px;
+    margin-right: 14px;
 }
-.content .reading .brief a.likes:hover ,.content .reading .brief .comments-num:hover{
-  color: #3eb3a5;
-  text-decoration: underline;
-}
-.content .reading .brief img {
-  padding-left: 1.914893617021277%;
-}
-.content .reading .brief a.comments-num {
+
+
+.content  .post-details a.comments-number {
   border: none;
+  display: inline-block;
   color: #c0c0c0;
   font-family: font37857;
   text-decoration: none;
 }
+
+ .post-details a.likes:hover ,.post-details a.comments-number:hover {
+  color: #3eb3a5;
+text-decoration: underline;}
 /*****REVIEW*****/
-.content .review {
-  padding-left: 13px;
-}
-.content .reading .review h1 {
+.content .post {
+      width: 85%;
+    display: inline-block;
+    position: relative;
+    bottom: 58px;
+    margin-left: 93px;
+  }
+.content  .post h1 {
   font-family: font37857;
   font-size: 30px;
   font-weight: bold;
+   text-transform: capitalize;
 }
-.content .reading .review h3 {
+.content  .post p {
   font-family: font37857;
   font-size: 16px;
   color: #8e8e8e;
@@ -207,13 +237,17 @@ img.head-img {
   letter-spacing: .3px;
   margin-bottom: 30px;
 }
-.review img {
+.post img {
   margin-bottom: 40px;
+
 }
 
 /*****TAGS******/
 .tags {
   margin-bottom: 38px;
+  font-family: font37857;
+  font-size: 16px;
+  color: #3eb3a5;
 }
 .tag-link {
   font-family: font37857;
@@ -232,12 +266,13 @@ img.head-img {
   margin-right: 16px;
 }
 
-/*-------comments-num------*/
-.comments-num {
+/*-------comments-counter------*/
+.comments-counter {
   border-bottom: 1px solid #ebebeb;
   padding: 29px 0 22px 0;
+  margin-bottom: 43px;
 }
-.comments-num p {
+.comments-counter p {
   float: left;
   font-family: font37857;
   font-size: 24px;
@@ -258,7 +293,7 @@ img.head-img {
 opacity: .6;
 }
 
-.comments-num .button {
+.comments-counter .button {
   float: right;
   font-size: 16px;
   padding: 17px 25px;
@@ -270,13 +305,16 @@ opacity: .6;
   text-align: center;
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 43px;
+   text-transform: capitalize;
 }
-.form h1 {
+.form h2 {
   font-family: font37857;
   font-size: 24px;
   font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 46px;
 }
-.form p {
+.form label {
   display: inline-block;
   font-family: font37857;
   font-size: 12px;
@@ -310,12 +348,12 @@ opacity: .6;
   padding-top: 19px;
   resize: none;
   position: relative;
-  left: -8%;
+  left: -8.5%;
   margin-bottom: 15px;
 }
 .form .CTA {
   float: left;
-  left: 98px;
+  left: 90px;
   position: relative;
 }
 .form .post-btn {
@@ -330,50 +368,57 @@ opacity: .6;
 }
 
 /*******Replies*******/
-.replies {
+.comments {
   margin-bottom: 30px;
 }
-.replies .profile-pic {
+.comments .profile-pic {
   width: 115px;
   height: 115px;
   border-radius: 50%;
   background-color: #ebebeb;
   display: inline-block;
-  margin-right: 23px;
-vertical-align: top;}
-.replies .position {
-  display: inline-block;
-  margin-top: 47px;
-}
-.replies .user-name {
+vertical-align: top;
+  transform: translatex(-45px);}
+
+.comments .author-name {
   display: inline-block;
   text-decoration: none;
   font-family: font37857;
   font-size: 24px;
   color: #3eb3a5;
   font-weight: bold;
-  margin: 0px;
+margin-left: -25px;
   margin-bottom: 29px;
+  transform: translateY(47px);
 }
-.replies .reply {
+
+.comments .position {
+  display: inline-block;
+ 
+}
+
+.comments .author-comment {
+     font-family: font37857;
+    font-size: 16px;
+    color: #565656;
+    max-width: 595px;
+    padding: 15px;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    margin: 0px;
+
+    margin-left: 88px;
+    transform: translateY(-17px);
+}
+.comments .reply {
   font-family: font37857;
-  font-size: 16px;
-  color: #565656;
-  max-width: 595px;
-  padding: 15px;
-  background-color: #ebebeb;
-  border-radius: 10px;
-  margin: 0;
-  margin-bottom: 17px;
+    font-size: 16px;
+    color: #3eb3a5;
+    text-decoration: none;
+   
+    margin-left: 107px;
 }
-.replies .another-reply {
-  font-family: font37857;
-  font-size: 16px;
-  color: #3eb3a5;
-  text-decoration: none;
-  margin-left: 15px;
-}
-.another-reply:hover{
+.reply:hover{
   text-decoration: underline;
 }
 
@@ -403,7 +448,5 @@ footer .copy-rights a:hover {
   padding-bottom: 3px;
   text-decoration: underline;
 }
-
-/********/
 
 
