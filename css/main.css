@@ -23,23 +23,22 @@ html[xmlns] .clearfix {
 }
 
 /* ------------ Header  ----------*/
-header {
-  border-bottom: 1px solid #dfdfdf;
-  height: 437px;
-  width: 1349px;
-  margin: 0 auto;
+header.page-header {
+  background-image: url('../img/header.jpg');
+  background-repeat: no-repeat;
+  background-position:50% 0%; 
+ border-bottom: 1px solid #dfdfdf;
+  min-height: 438px;
+ 
   
   margin-bottom: 58px;
 }
-img.head-img {
-  width: 1349px;
-  height: 350px;
-  margin-bottom: 32px;
-}
+
 .nav {
   text-align: center;
-  display: block;
    text-transform: capitalize;
+   position: relative;
+    top: 378px;
 }
 .nav .ul {
   list-style-type: none;
@@ -124,7 +123,6 @@ img.head-img {
 .content {
   border-bottom: 1px solid #ebebeb;
   z-index: -1;
-   height: 1012px;
 
 }
 
@@ -214,7 +212,7 @@ img.head-img {
  .post-details a.likes:hover ,.post-details a.comments-number:hover {
   color: #3eb3a5;
 text-decoration: underline;}
-/*****REVIEW*****/
+/*****post*****/
 .content .post {
       width: 85%;
     display: inline-block;
@@ -222,7 +220,7 @@ text-decoration: underline;}
     bottom: 58px;
     margin-left: 93px;
   }
-.content  .post h1 {
+.content  .post .article-header h2 {
   font-family: font37857;
   font-size: 30px;
   font-weight: bold;
@@ -272,7 +270,7 @@ text-decoration: underline;}
   padding: 29px 0 22px 0;
   margin-bottom: 43px;
 }
-.comments-counter p {
+.comments-counter h2 {
   float: left;
   font-family: font37857;
   font-size: 24px;
@@ -367,11 +365,11 @@ opacity: .6;
   margin-bottom: 40px;
 }
 
-/*******Replies*******/
-.comments {
+/*******comments*******/
+.comment {
   margin-bottom: 30px;
 }
-.comments .profile-pic {
+.comment .profile-pic {
   width: 115px;
   height: 115px;
   border-radius: 50%;
@@ -380,7 +378,7 @@ opacity: .6;
 vertical-align: top;
   transform: translatex(-45px);}
 
-.comments .author-name {
+.comment .author-name {
   display: inline-block;
   text-decoration: none;
   font-family: font37857;
@@ -392,12 +390,12 @@ margin-left: -25px;
   transform: translateY(47px);
 }
 
-.comments .position {
+.comment .position {
   display: inline-block;
  
 }
 
-.comments .author-comment {
+.comment .author-comment {
      font-family: font37857;
     font-size: 16px;
     color: #565656;
@@ -410,7 +408,7 @@ margin-left: -25px;
     margin-left: 88px;
     transform: translateY(-17px);
 }
-.comments .reply {
+.comment .reply {
   font-family: font37857;
     font-size: 16px;
     color: #3eb3a5;
@@ -422,29 +420,29 @@ margin-left: -25px;
   text-decoration: underline;
 }
 
-/******FOOTER*******/
-footer {
+/******PAGE-FOOTER*******/
+footer.page-footer {
   text-align: center;
   margin-top: 15px;
 }
-footer .button {
+footer.page-footer .button {
   margin-top: 12px;
   font-size: 18px;
   font-weight: bold;
   padding: 22px;
   outline: none;
 }
-footer .copy-rights {
+footer.page-footer .copy-rights {
   font-family: font37857;
   font-size: 18px;
   color: #aeaeae;
   margin: 56px 0 40px 0;
 }
-footer .copy-rights a {
+footer.page-footer .copy-rights a {
   color: #3eb3a5;
   text-decoration: none;
 }
-footer .copy-rights a:hover {
+footer.page-footer .copy-rights a:hover {
   padding-bottom: 3px;
   text-decoration: underline;
 }
