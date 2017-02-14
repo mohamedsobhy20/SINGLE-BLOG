@@ -120,20 +120,20 @@ header.page-header {
 }
 
 /* ----------------content -----------*/
-.content {
+ {
   border-bottom: 1px solid #ebebeb;
   z-index: -1;
 
 }
 
 /*****DATES******/
-.content .post-info {
+ .article-header {
   position: relative;
     left: -55px; 
     text-transform: capitalize;
 }
 
-.content .post-date {
+ .post-date {
  font-family: font37857;
     font-size: 30px;
     font-weight: bold;
@@ -148,7 +148,7 @@ header.page-header {
 
 
 
-.content .post-details {
+ .post-details {
   vertical-align: top;
     position: relative;
     top: 24px;
@@ -159,7 +159,7 @@ header.page-header {
     display: inline-block;
 }
 
-.content  .post-details p.categories {
+  .post-details p.categories {
   margin: 0px;
   display: inline-block;
   margin-bottom: 13px;
@@ -180,15 +180,15 @@ header.page-header {
   padding-right: 10px;
  }
 
-.content  .post-details p a:hover {
+ .post-details p a:hover {
   text-decoration: underline;
 }
-.content .post-details i {
+ .post-details i {
   padding-left: 10px;
   color: #3eb3a5;
 }
 
-.content  .post-details a.likes {
+ .post-details a.likes {
     color: #c0c0c0;
     font-family: font37857;
     text-decoration: none;
@@ -201,7 +201,7 @@ header.page-header {
 }
 
 
-.content  .post-details a.comments-number {
+  .post-details a.comments-number {
   border: none;
   display: inline-block;
   color: #c0c0c0;
@@ -213,20 +213,20 @@ header.page-header {
   color: #3eb3a5;
 text-decoration: underline;}
 /*****post*****/
-.content .post {
+.post {
       width: 85%;
     display: inline-block;
     position: relative;
     bottom: 58px;
     margin-left: 93px;
   }
-.content  .post .article-header h2 {
+  .post .article-header h1 {
   font-family: font37857;
   font-size: 30px;
   font-weight: bold;
    text-transform: capitalize;
 }
-.content  .post p {
+  .post p {
   font-family: font37857;
   font-size: 16px;
   color: #8e8e8e;

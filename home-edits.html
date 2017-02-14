@@ -44,45 +44,57 @@
     </header><!-- end of header -->
     
     <main>
-    <section class="container content clearfix">
+      <article class="container">
+
+   
      
 
-      <div class="post-info">
+      <header class="article-header">
+       
          <time class="post-date" datetime="2017-07-31">31 Jul</time>
-     
-    
-        
+
         <div class=" post-details">
+
           <p class="categories">
             cat : <a href="#" class="category-link"> diary</a>
             <span class="category-link">,</span>
-            <a  class="category-link second-category" href="#">personal</a></p>
+            <a  class="category-link second-category" href="#">personal</a>
+
+          </p>
+          
           <i class="fa fa-heart" aria-hidden="true"></i>
           <a class="likes" href="#">136 Likes</a>
           <img src="img/comment.png" alt="comment"/>
           <a class="comments-number" href="#">21 Comments</a>
-        </div>
-        </div>
-
-        <article class="container post">
-          <header class="article-header">
-          <h2>lorem Ipsum dolor sit amet</h2>
-          </header>
-          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
-          <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti. sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
-         
-          <img alt="post-image" src="img/bus.jpg" />
         
-          <footer class="tags">
+        </div>
+        </header>
+
+        <div class="container post">
+         
+          <h1>lorem Ipsum dolor sit amet</h1>
+         
+          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+          </p>
+          
+          <p>
+            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti. sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+          </p>
+         
+         <figure> 
+         <img alt="post-image" src="img/bus.jpg"/>
+        </figure>
+          
+          <div class="tags">
             <span class="tags-span">TAGS</span>
             <a href="#" class="tag-link">holidary</a>
             ,
             <a href="#" class="tag-link"> diary</a>
             ,
             <a href="#" class="tag-link"> bestmomments</a>
-           </footer>
-            </article>
-  </section>  
+           </div>
+            </div>
+   
     
     <section class="container comments-counter clearfix">
       <h2>21 Comments</h2>
@@ -92,15 +104,17 @@
    
       
       <form  class="container form" id="comment-form">
-        <header>
+       
         <h2>post a comment</h2>
-        </header>
+        
         <label for="author-name">Use Your Real Name</label>
         <input class="form-style name" type="text" placeholder="Name" id="author-name">
 
         <input class="form-style mail" type="email" placeholder="Email" id="author-email">
         <label for="author-email">Email Will not published</label>
+        
         <br>
+        
         <label for="author-comment" class="CTA">Write a good comment</label>
         <textarea  placeholder="Comments" class =" form-style comment-input" form="comment-form" id="author-comment"></textarea>
         <br>
@@ -108,7 +122,8 @@
 
       </form>
    
-   <div class="comments">
+   <footer class="comments article-footer">
+   
     <div class="container comment">
     
     <div class="author-info">
@@ -144,9 +159,10 @@
       
 
     </div>
-    </div>
-
+    </footer>
+     </article>
     </main>
+   
     <footer class="page-footer">
       <button class="button">Show More commetns</button>
       <p class="copy-rights">Copyrights (c) 
