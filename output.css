@@ -1,0 +1,76 @@
+/* MIXINS */
+/* HEADER */
+header.page-header {
+  height: 400px;
+  margin-bottom: 132px;
+  background: transparent url(img/header.jpg) no-repeat top center;
+  background-size: cover;
+  border-bottom: 1px solid #dfdfdf; }
+  header.page-header .nav {
+    text-transform: capitalize;
+    width: 706px;
+    margin: 0 auto;
+    padding-top: 297px; }
+    header.page-header .nav .logo {
+      text-indent: -10000px;
+      display: inline-block;
+      background-image: url(img/boy.png);
+      width: 197px;
+      height: 197px;
+      border: 7px solid white;
+      border-radius: 50%;
+      margin: 0 18px; }
+    header.page-header .nav .ul {
+      display: inline-block;
+      list-style-type: none;
+      padding: 0px; }
+      header.page-header .nav .ul .li {
+        display: inline-block;
+        font-family: font37857;
+        font-size: 24px;
+        font-weight: bold; }
+        header.page-header .nav .ul .li:nth-child(2) {
+          margin-left: 52px; }
+        header.page-header .nav .ul .li .a {
+          text-decoration: none;
+          color: #bcbcbc; }
+          header.page-header .nav .ul .li .a:hover {
+            color: #3eb3a5;
+            border-bottom: 5px solid #afafaf;
+            padding-bottom: 16px; }
+    header.page-header .nav ul.first-ul, header.page-header .nav ul.second-ul {
+      float: left;
+      margin-top: 125px; }
+    header.page-header .nav ul.second-ul {
+      float: right; }
+      header.page-header .nav ul.second-ul .category {
+        position: relative; }
+        header.page-header .nav ul.second-ul .category .dropdown-content {
+          display: none;
+          position: absolute;
+          list-style-type: none;
+          width: 224px;
+          height: 370px;
+          padding: 0;
+          background-color: white;
+          border-radius: 10px;
+          box-shadow: -2px 0px 35px 6px #d8d8d8;
+          top: 150%;
+          left: -17%;
+          z-index: 2; }
+          header.page-header .nav ul.second-ul .category .dropdown-content a {
+            color: #bcbcbc;
+            font-weight: normal;
+            border-bottom: 1px solid #e1e1e1;
+            font-size: 18px;
+            text-decoration: none;
+            margin-left: 11px;
+            margin-right: 24px;
+            padding: 28px 0 19px 13px;
+            display: block; }
+            header.page-header .nav ul.second-ul .category .dropdown-content a:hover {
+              color: #3eb3a5; }
+        header.page-header .nav ul.second-ul .category:hover .dropdown-content {
+          display: block; }
+
+/*# sourceMappingURL=output.css.map */
