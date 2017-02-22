@@ -82,11 +82,8 @@ header.page-header {
 .logo {
 	text-indent: -10000px;
 	display: inline-block;
-<<<<<<< HEAD
 	background-image: url(img/boy.png);
-=======
 	background-image: url(../img/boy.png);
->>>>>>> b6b11070e8e174100d810a5da6924cb12948b7c4
 	width: 197px;
 	height: 197px;
 	border: 7px solid white;

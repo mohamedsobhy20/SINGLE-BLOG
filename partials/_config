@@ -1,7 +1,7 @@
-$primary-color:#3eb3a5;
+$primary_color:#3eb3a5;
 
-$primary-font: font37857;
+$primary_font: font37857;
 
-$primary-border: 1px solid #e1e1e1;
+$primary_border: 1px solid #e1e1e1;
 
-$main-font-size: 16px;
+$main_font_size: 16px;

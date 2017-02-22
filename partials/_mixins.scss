@@ -1,75 +1,52 @@
 /* MIXINS */
-@mixin clearfix {
-	.clearfix::after {
-	content: "";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
+@mixin size ($width, $height) {
+	width: $width;
+	height: $height;
 }
 
-.clearfix {
-	display: block;
+@mixin position ($margin, $padding) {
+	margin: $margin;
+	padding: $padding;
 }
-
-html[xmlns] .clearfix {
-	display: block;
-}
-
-* html .clearfix {
-	height: 1%;
-}
-
-.container {
-	width: 940px;
-	margin: 0px auto;
-}
-}
-
 
 @mixin headers {
-	font-family:$primary-font;
-	font-weight: bold;
+	font: {
+		family: $primary-font;
+		weight: bold;
+	}
 	text-transform: capitalize;
-	color:black;
+	color: black;
 }
 
 @mixin buttons {
 	background-color: #3eb3a5;
-	font-family: font37857;
+	font-family: $primary-font;
 	color: white;
 	border-radius: 10px;
 	border: none;
 	transition: opacity 1s;
 
 	&:hover {
-	opacity: .6;
+		opacity: .6;
 	}
-
-	}	
-
-@mixin drop-down-list {
-	display: none;
-	position: absolute;
-	list-style-type: none;
-	width: 224px;
-	height: 370px;
-	padding: 0;
-	background-color: white;
-	border-radius: 10px;
-	box-shadow: -2px 0px 35px 6px #d8d8d8;
-	top: 150%;
-	left: -17%;
-	z-index: 2;
 }
-@mixin logo {
-	text-indent: -10000px;
-	display: inline-block;
-	background-image: url(img/boy.png);
-	width: 197px;
-	height: 197px;
-	border: 7px solid white;
-	border-radius: 50%;
-	margin: 0 18px;
+
+@mixin clearfix {
+	.clearfix::after {
+		content: "";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+	}
+	.clearfix {
+		display: block;
+	}
+	html[xmlns] .clearfix {
+		display: block;
+	}
+	* html .clearfix {
+		height: 1%;
+	}
 }
