@@ -3,6 +3,7 @@
 ### General
 * commits messages should be a summery description of what these edits about, not just any random message with some dates.
 * File structure needs to be more organized
+* Merge into the `master` branch
 
 ### SASS
 * `.sass-cache` directory/folder shouldn't be included in the repo as it's just for development env purposes which mean it won't be included in the production or uploaded to the live websit.
