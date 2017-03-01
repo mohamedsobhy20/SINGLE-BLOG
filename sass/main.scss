@@ -272,6 +272,7 @@ body {
 	}
 	.button {
 		@extend %buttons;
+		cursor:pointer;
 		float: right;
 		font-size: $main_font_size;
 		padding: 17px 25px;
