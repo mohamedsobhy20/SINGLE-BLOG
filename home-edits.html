@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="en">	
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Single Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<link rel="stylesheet" href="sass/output.css">
+
+
+	<script src="https://use.fontawesome.com/31cba1b798.js"></script>
+	<link href="https://www.fontify.me/wf/112b7ad2ae94ae54fafa32efbf93db5d" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header class="page-header">
+		<nav class="nav">
+			<a class="logo" href="#">Blog Name</a>
+
+			<ul class="ul first-ul">
+				<li class="li"><a class="a" href="#">home</a></li>
+				<li class="li"><a class="a" href="#">about</a></li>
+			</ul>
+
+			<ul class="ul second-ul">
+				<li class="li category">
+					<a class="a" href="#">category <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+
+					<ul class="dropdown-content">
+						<li><a href="#">diary</a></li>
+						<li><a href="#">personal</a></li>
+						<li><a href="#">holiday</a></li>
+						<li><a href="#">work</a></li>
+						<li><a href="#">family</a></li>
+					</ul>
+				</li>
+				<li class="li"><a class="a" href="#">contact</a></li>
+			</ul>
+		</nav>
+	</header><!-- end of header -->
+
+	<main class="container">
+		<article class="article">
+			<header class="article-header">
+				<time class="article-date" datetime="2017-07-31">31 Jul</time>
+				<div class="article-meta">
+					<div class="article-details">
+						<p class="categories">
+							cat : <a href="#" class="category-link"> diary</a> 
+							<span class="category-link">,</span> 
+							<a class="category-link second-category" href="#">personal</a>
+						</p>
+
+						<p class="article-likes"><img src="img/like.png" alt="like"/> <a class="likes" href="#">136 Likes</a></p>
+
+						<p class="article-comments-count"><img src="img/comment.png" alt="comment"/> <a class="comments-number" href="#">21 Comments</a></p>
+					</div>
+
+					<h1 class="article-title">lorem ipsum dolor sit amet</h1>
+				</div>
+			</header><!-- .article-header -->
+
+			<div class="article-content">
+				<p>This is Photoshop's version	of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+
+				<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti. sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+
+				<figure><img alt="article-image" src="img/bus.jpg"/></figure>
+			</div>
+
+			<footer class="article-footer tags">
+				<span class="tags-span">TAGS</span>
+				<a href="#" class="tag-link">holidary</a>,
+				<a href="#" class="tag-link"> diary</a>,
+				<a href="#" class="tag-link"> bestmomments</a>
+			</footer>
+		</article>
+
+		<section class="comments-counter clearfix">
+			<h2>21 Comments</h2>
+			<a href="#" class="button">Next Stories ></a>
+		</section>
+
+		<section class="comment-form">
+			<h2>post a comment</h2>
+
+			<form id="comment-form">
+				<div class="comment-author-name">
+					<label for="author-name">Use Your Real Name</label>
+					<input class="form-input name" type="text" placeholder="Name" id="author-name">
+				</div>
+
+				<div class="comment-author-mail">
+					<label for="author-email">Email Will not published</label>
+					<input class="form-input mail" type="email" placeholder="Email" id="author-email">
+				</div>
+			
+				<div class="comment-body">
+					<label for="comment-body">Write a good comment</label>
+					<textarea placeholder="Comments" class="form-input comment-input" id="comment-body"></textarea>
+				</div>
+
+				<input class="article-btn button" type="submit" value="Post" />
+			</form>
+		</section>
+
+		<div class="comments">
+			<div class="comment">
+				<img class="profile-pic" src="img/profile-pic.jpg" alt="profile-pic" />
+
+				<a href="#" class="author-name">John Doe</a>
+
+				<p class="author-comment">his is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a</p>
+
+				<a class="reply" href="#">Reply</a>
+			</div>
+		
+			<div class="comment">
+				<img class="profile-pic" src="img/profile-pic.jpg" alt="profile-pic" />
+
+				<a href="#" class="author-name">John Doe</a>
+
+				<p class="author-comment">his is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a</p>
+
+				<a class="reply" href="#">Reply</a>
+			</div>
+
+			<p class="load-more-comments"><a href="#" class="button">Show More comments</a></p>
+		</div><!-- .comments -->
+	</main>
+
+	<footer class="container page-footer">
+		<p class="copy-rights">Copyrights (c) <a href="#">Fikristudio</a> 2014</p>
+	</footer>
+</body>
+</html>
