@@ -20,34 +20,40 @@
 		border-radius: 50%;
 		margin: 0 18px;
 	}
+
 	ul {
 		display: inline-block;
 		list-style-type: none;
 		padding: 0px;
-	}
-}
-.li {
-	display: inline-block;
 
-	font: {
-		family: $primary_font;
-		size: 24px;
-		weight: bold;
-	}
-	&:nth-child(2) {
-		margin: 0 0 0 52px;
-	}
-	.a {
-		text-decoration: none;
-		color: #bcbcbc;
+		// '.li' is not a meaningful class name, also if you think an element doesn't need to have a class name, so don't just gave it any class name
+		li {
+			display: inline-block;
 
-		&:hover {
-			color: $primary_color;
-			border-bottom: 5px solid #afafaf;
-			padding: 0 0 16px 0;
+			font: {
+				family: $primary_font;
+				size: 24px;
+				weight: bold;
+			}
+
+			&:nth-child(2) {
+				margin: 0 0 0 52px;
+			}
+			
+			.a {
+				text-decoration: none;
+				color: #bcbcbc;
+
+				&:hover {
+					color: $primary_color;
+					border-bottom: 5px solid #afafaf;
+					padding: 0 0 16px 0;
+				}
+			}
 		}
 	}
 }
+
 .first-ul {
 	float: left;
 	margin: 125px 0 0 0;
