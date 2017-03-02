@@ -1,0 +1,24 @@
+/****FOOOTER****/
+.page-footer {
+	text-align: center;
+	margin-top: 15px;
+
+	.copy-rights {
+		font: {
+			family: $primary_font;
+			size: 18px;
+		}
+		color: #aeaeae;
+		margin: 56px 0 40px 0;
+
+		a {
+			color: $primary-color;
+			text-decoration: none;
+
+			&:hover {
+				padding: 0 0 3px 0;
+				text-decoration: underline;
+			}
+		}
+	}
+}

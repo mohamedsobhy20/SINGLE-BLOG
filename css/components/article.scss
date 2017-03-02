@@ -1,0 +1,155 @@
+/********ARTICLE************/
+.article {
+	border-bottom: $primary_border;
+	padding: 0 0 37px 0;
+}
+
+/**************Article Header ********/
+.article-header {
+	text-transform: capitalize;
+	margin: 0 0 15px 0;
+}
+.article-date {
+	font: {
+		family: $primary_font;
+		size: 30px;
+		weight: bold;
+	}
+	color: $primary_color;
+	border: 7px solid #ebebeb;
+	border-radius: 50%;
+	display: inline-block;
+	padding: 44px 23px 37px 23px;
+}
+.article-meta {
+	width: 85%;
+	vertical-align: top;
+	margin: 32px 0 0 0;
+	display: inline-block;
+
+	h1 {
+		@extend %headers;
+		@include position (27px 0 0 0, 0 0 0 10px);
+		font-size: 30px;
+	}
+}
+.article-details {
+	border-bottom: $primary_border;
+	@include position (0 0 0 -5px, 0 0 0 14px);
+
+	p {
+		display: inline-block;
+
+		a {
+			&:hover {
+				text-decoration: underline;
+				color: $primary_color;
+			}
+		}
+	}
+	.categories {
+		font: {
+			size: 14px;
+			family: $primary_font;
+		}
+		margin: 0 0 13px 0;
+		display: inline-block;
+		color: #c0c0c0;
+		line-height: 25px;
+		border-right: $primary_border;
+	}
+	.category-link {
+		font: {
+			size: 14px;
+			family: $primary_font;
+		}
+		color: $primary_color;
+		text-decoration: none;
+	}
+	.second-category {
+		padding-right: 10px;
+	}
+	.comments-number {
+		font: {
+			size: 14px;
+			family: $primary_font;
+		}
+		color: #c0c0c0;
+		text-decoration: none;
+	}
+	.likes {
+		@extend .comments-number;
+		@include position (0 14px 0 0, 0 14px 0 0);
+		line-height: 26px;
+		border-right:$primary_border;
+	}
+}
+
+/*******Article-content*********/
+.article-content {
+	width: 84%;
+	margin: 0 0 0 150px;
+
+	p {
+		font: {
+			family: $primary_font;
+			size: $main_font_size;
+		}
+		color: #8e8e8e;
+		line-height: 1.5;
+		letter-spacing: .3px;
+		margin: 0 0 30px 0;
+	}
+	figure {
+		margin: 0 0 40px 0;
+	}
+}
+
+/******Article-footer***********/
+.tags {
+	font: {
+		family: $primary_font;
+		size: $main_font_size;
+	}
+	margin: 0 0 0 150px;
+	color: $primary_color;
+
+	.tags-span {
+		font: {
+			size: 18px;
+			weight: bold;
+		}
+		color: black;
+		margin: 0 16px 0 0;
+	}
+	.tag-link {
+		font-size: $main_font_size;
+		color: $primary_color;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+/****COMMENTS-COUNTER***/
+.comments-counter {
+	@include position (0 0 43px 0, 32px 0 22px 0);
+	border-bottom: $primary_border;
+
+	h2 {
+		@extend %headers;
+		float: left;
+		font-size: 24px;
+	}
+	.button {
+		@extend %buttons;
+		cursor:pointer;
+		float: right;
+		font-size: $main_font_size;
+		padding: 17px 25px;
+		text-decoration: none;
+	}
+}
+

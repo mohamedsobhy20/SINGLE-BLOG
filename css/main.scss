@@ -1,0 +1,23 @@
+// partials
+@import 'partials/variables';
+@import 'partials/placeholders';
+@import 'partials/mixins';
+
+/* 
+ * Components
+ */
+
+// general styling
+@import 'components/general';
+
+// page header
+@import 'components/header';
+
+// article section
+@import 'components/article';
+
+// comments section
+@import 'components/comments';
+
+// comments section
+@import 'components/footer';

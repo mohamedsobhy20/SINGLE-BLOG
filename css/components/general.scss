@@ -1,0 +1,32 @@
+/**
+ * General
+ */
+
+body {
+	margin: 0;
+}
+
+/*** CLEARFIX ****/
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	display: block;
+}
+html[xmlns] .clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1%;
+}
+
+/*******************/
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
